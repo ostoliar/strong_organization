@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +9,34 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <div class="header">
         <div class="header_nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <div class="header_nav_menu">
+                <input type="checkbox" id="menu">
+                <label for="menu"></label>
+                <div class="menu_content">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header_search_bar">
+
+                <div class="header_search_bar_img">
+                    <input class="header_search_bar_input" type="text" placeholder="Search...">
+                    <img class="header_search_bar_img_active" src="img/search-icon.png" alt="">
+                </div>
+            </div>
+
         </div>
         <div class="header_grid__wrapper">
             <div class="header_grid__wrapper_left">
@@ -26,11 +44,15 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <a href="#">Contact us</a>
             </div>
-            <div class="header_grid__wrapper_left">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Mus_vwhTCq0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="header_grid__wrapper_right">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Mus_vwhTCq0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </div>
     </div>
-    
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
