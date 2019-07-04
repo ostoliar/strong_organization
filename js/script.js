@@ -14,3 +14,13 @@ $(document).ready(function() {
 //         $(this).toggleClass("fas fa-search fas fa-search-minus");
 // })
 // });
+
+
+$(document).ready(function() {
+    $('#products-filter li').on('click', function(){
+        let dataAttr = $(this).attr('data-name');
+        $('.future_product_img_hide').css('display', 'none');
+        $('.' + dataAttr).css('display', 'block');
+        return false;
+    })
+})
